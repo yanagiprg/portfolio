@@ -1,0 +1,5 @@
+<%= form_for @post do |f| %>
+  <p>Name:<%= f.text_field :name %></p>
+  <p>content:<%= f.text_area :content, cols: 30, rows: 2 %></p>
+  <input type="submit" value="送信">
+<% end %>

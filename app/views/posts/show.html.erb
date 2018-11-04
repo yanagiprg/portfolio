@@ -1,0 +1,15 @@
+<div class="show center mx-auto">
+  <div class="box mx-4 mt-5 ">
+    <div class="inbox pt-1 pb-3 shadow rounded">
+      <div class="img_smpl-show mx-auto mt-4 mb-2 shadow"></div>
+      <div class="text text-center pt-2">
+        <h2 class="my-3"><%= @post.name %> - <%= @post.content %></h2>
+        <h5 class="my-2"><%= @post.created_at %></h5>
+        <h5 class="my-2">
+          <%= link_to "edit", [:edit, @post] %> |
+          <%= link_to "delete", post_path(@post), method: :delete %>
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>

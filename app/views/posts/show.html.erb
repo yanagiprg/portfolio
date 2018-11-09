@@ -1,7 +1,9 @@
 <div class="show center mx-auto">
   <div class="box mx-4 mt-5 ">
     <div class="inbox pt-1 pb-3 shadow rounded">
-      <div class="img_smpl-show mx-auto mt-4 mb-2 shadow"></div>
+      <div class="img_smpl-show mx-auto mt-4 mb-2 shadow">
+        <%= image_tag @post.image.thumb.url %>
+      </div>
       <div class="text text-center pt-2">
         <h2 class="my-3"><%= @post.name %> - <%= @post.content %></h2>
         <h5 class="my-2"><%= @post.created_at %></h5>

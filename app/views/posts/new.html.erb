@@ -1,5 +1,6 @@
 <%= form_for @post do |f| %>
   <p>Name:<%= f.text_field :name %></p>
-  <p>content:<%= f.text_area :content, cols: 30, rows: 2 %></p>
-  <input type="submit" value="送信">
+  <p>Content:<%= f.text_area :content, cols: 30, rows: 2 %></p>
+  <p>Image:<%= f.file_field :image %></p>
+  <input type="submit" value="Upload">
 <% end %>

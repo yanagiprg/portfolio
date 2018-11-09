@@ -1,9 +1,11 @@
 <h1 class="text text-center my-5">Hardstyle</h1>
 <div class="row px-4">
   <% @posts.each do |post| %>
-  <div class="box px-2 col-md-3 col-sm-4 col-xs-4">
+  <div class="box p-2 col-md-3 col-sm-4 col-xs-4">
     <div class="inbox mx-auto pt-1 shadow rounded">
-      <div class="img_smpl mx-auto mt-4 mb-2 shadow"></div>
+      <div class="img_smpl mx-auto mt-4 mb-2 shadow">
+        <%= image_tag post.image.thumb.url %>
+      </div>
       <p class="text text-center pt-2 pb-3">
         <%= link_to post.name, post_path(post) %>
       </p>

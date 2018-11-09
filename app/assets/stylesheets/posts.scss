@@ -4,19 +4,19 @@
 }
 .inbox{
   background-color: rgba( 255, 255, 255, 0.5);
+  overflow: hidden;
 }
 .img_smpl{
   height:20vh;
   width: 20vh;
-  background-color: rgba(213, 207, 228, 0.8);
-  // background: url('../');
-  background-size: cover;
+  align-content: center;
+  overflow: hidden;
+
 }
 
 // posts/show
 .img_smpl-show{
   height: 40vh;
   width: 40vh;
-  background-color: rgba(213, 207, 228, 0.8);
   background-size: cover;
 }

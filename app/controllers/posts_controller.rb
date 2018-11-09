@@ -18,7 +18,8 @@ class PostsController < ApplicationController
     Post.create(
       name: post_params[:name],
       content: post_params[:content],
-      user_id: current_user.id
+      user_id: current_user.id,
+      image: post_params[:image]
     )
     redirect_to posts_path
   end
@@ -47,7 +48,7 @@ class PostsController < ApplicationController
 private
 
 def post_params
-  params.require(:post).permit(:name, :content)
+  params.require(:post).permit(:name, :content, :image)
 end
 
 
